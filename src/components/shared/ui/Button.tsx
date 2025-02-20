@@ -5,12 +5,13 @@ type ButtonProps = {
   type: "submit" | "reset" | "button",
   onClick?: () => void,
   isSubmiting?:boolean
+  classes?:string
   props?: React.ButtonHTMLAttributes<HTMLButtonElement>,
 }
 
-function Button({children,type,onClick,isSubmiting,...props}:ButtonProps) {
+function Button({children,type,onClick,isSubmiting,classes,...props}:ButtonProps) {
   return (
-    <button type={type}  onClick={onClick} disabled={isSubmiting} {...props} className={`h-[50px] font-poppins focus:outline-importante hover:bg-botao-secundary hover:text-importante hover:scale-105 focus:bg-botao-secundary focus:text-importante focus:scale-105  duration-300 transition-all ease-in-out disabled:cursor-not-allowed  cursor-pointer w-full shadow-ui rounded-sm text-subtitle text-branco-acinzentado  bg-botao-primary border-1 border-stroke`}>
+    <button type={type}  onClick={onClick} disabled={isSubmiting} {...props} className={`${classes} h-[50px] font-poppins focus:outline-importante hover:bg-botao-secundary hover:text-importante hover:scale-105 focus:bg-botao-secundary focus:text-importante focus:scale-105  duration-300 transition-all ease-in-out disabled:cursor-not-allowed  cursor-pointer w-full shadow-ui rounded-sm text-subtitle text-branco-acinzentado  bg-botao-primary border-1 border-stroke`}>
       {children}
     </button>
   )
