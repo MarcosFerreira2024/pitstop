@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${poppins.variable} bg-background antialiased overflow-hidden `}
+        className={`${roboto.variable} ${poppins.variable} bg-background antialiased overflow-x-hidden `}
       >
         {children}
       </body>
