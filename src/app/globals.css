@@ -48,7 +48,7 @@ body {
 
 }
 
-.shadow-ui  { box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), inset 2px 2px 5px rgba(0, 0, 0, 0.2);}
+.shadow-ui  { box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.10), inset 2px 2px 5px rgba(0, 0, 0, 0.10);}
 
 
 
