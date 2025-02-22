@@ -1,4 +1,5 @@
-import { CarsProps } from "@/components/Main/Cars";
+import { CarsProps } from "@/components/Main/Cars/Cars";
+import { Car } from "@/services/car";
 
 export const carData: CarsProps[] = [
   {
@@ -163,3 +164,25 @@ export const carData: CarsProps[] = [
     src: 'https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg',
   },
 ];
+
+
+export const car: Car = {
+  id: "1",
+  title: "Honda Civic 2020",
+  description: "Carro em excelente estado, único dono, todas as revisões feitas na concessionária.",
+  photos: [
+      'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg',
+      'https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg',
+      'https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg',
+  ],
+  oldPrice: "R$ 110.000",
+  newPrice: "R$ 98.000",
+  seller: {
+      id: "123",
+      name: "João Silva",
+      email: "joao.silva@email.com"
+  },
+  city: "São Paulo",
+  state: "SP",
+  negotiable: true
+};
