@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React from 'react'
-import Button from '../shared/ui/Button'
+import Button from '../../shared/ui/Button'
 import Link from 'next/link'
 
 export type CarsProps = {
@@ -17,7 +17,7 @@ export type CarsProps = {
 function Cars({src,alt,title,oldPrice,newPrice,id}:CarsProps) {
   return (
     <div className='flex flex-col mb-10 gap-2.5  border-b-1 pb-2.5 border-b-stroke  flex-1 w-full min-w-[280px] md:min-w-[335px]'>
-        <Link href={`/car/${id}`}><Image src={src} alt={alt} width={1920} height={1080} className='object-cover hover:scale-105 duration-300 ease-in-out  min-w-[280px] md:min-w-[335px]  w-full max-h-[340px] min-h-[340px] rounded-sm shadow-ui border-1 border-stroke' /></Link>
+        <Link href={`main/car/${id}`}><Image src={src} alt={alt} width={1920} height={1080} className='object-cover hover:scale-105 duration-300 ease-in-out  min-w-[280px] md:min-w-[335px]  w-full max-h-[340px] min-h-[340px] rounded-sm shadow-ui border-1 border-stroke' /></Link>
         <h1 className='text-importante text-title font-roboto'>{title}</h1>
         <div className='flex flex-row justify-between items-center'>
             <div className='flex flex-col gap-1.5'>
@@ -29,6 +29,8 @@ function Cars({src,alt,title,oldPrice,newPrice,id}:CarsProps) {
             </div>
 
         </div>
+
+        
       
     </div>
   )
