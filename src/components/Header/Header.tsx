@@ -8,7 +8,7 @@ function Header() {
 
   
   return (
-    <header className='flex justify-between relative items-center   py-5 px-5'>
+    <header className='flex justify-between relative items-center mb-[60px]   py-5 '>
       <Logo escala={2} />
 
 
